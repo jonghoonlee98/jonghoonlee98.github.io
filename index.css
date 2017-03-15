@@ -1,32 +1,46 @@
 body {
-	text-align: center;
+	font-family:Julius Sans One;
 	background-color: white;
-	background-image: url("jumbo.jpeg");
+	background: url("rolling.jpg");
 	background-repeat: no-repeat;
-	background-position: 50% 165%;
+	background-position: 0 -8%;
+	background-size: 100%;
 }
 
-#name
-{
-	font-weight: bold;
-	color: black;
-	font-size:30px;
+#name {
+	font-size:270%;
+	padding-left: 8%;
 }
 
-.pic
-{
-max-width:15%;
-max-height:15%;
+#about {
+	position:absolute;
+	font-size: 155%;
+	padding-left: 65.5%;
+	padding-top: -4%;
 }
 
-#resume
-{
-	font-size: 18px;
-	font-family: Arial;
+#projects {
+	position:absolute;
+	font-size: 155%;
+	padding-left: 73%;
+	padding-top: -4%;
 }
 
-#biography
-{
-	font-size: 16px;
-	font-family: Arial;
-}# jonghoonlee98.github.io
+#resume {
+	position:absolute;
+	font-size: 155%;
+	padding-left: 82%;
+	padding-top: -4%;
+}
+
+#contact {
+	position:absolute;
+	font-size: 155%;
+	padding-left: 90%;
+	padding-top: -4%;	
+}
+
+a {
+	color:black;
+	text-decoration: none;
+}
