@@ -1,40 +1,47 @@
 body {
-	font-family:Julius Sans One;
+	font-family: Julius Sans One;
 	background-color: white;
 	background: url("images/rolling.jpg");
 	background-repeat: no-repeat;
-	background-position: 0 -8%;
+	background-position: 0 -9%;
 	background-size: 100%;
+	position: relative;
+	z-index: 1;
 }
 
 #name {
-	font-size:270%;
+	font-size: 270%;
 	padding-left: 8%;
 }
 
+#quote {
+	font-size: 500%;
+}
+
+.ampersand {
+	font-size: 70%;
+	color: #808000;
+}
+
 #about {
-	position:absolute;
 	font-size: 155%;
 	padding-left: 65.5%;
 	padding-top: -4%;
 }
 
 #projects {
-	position:absolute;
 	font-size: 155%;
 	padding-left: 73%;
 	padding-top: -4%;
 }
 
 #resume {
-	position:absolute;
 	font-size: 155%;
 	padding-left: 82%;
 	padding-top: -4%;
 }
 
 #contact {
-	position:absolute;
 	font-size: 155%;
 	padding-left: 90%;
 	padding-top: -4%;	
