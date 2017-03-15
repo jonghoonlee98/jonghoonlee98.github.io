@@ -1,7 +1,7 @@
 body {
 	font-family:Julius Sans One;
 	background-color: white;
-	background: url("rolling.jpg");
+	background: url("images/rolling.jpg","images/flag.jpg");
 	background-repeat: no-repeat;
 	background-position: 0 -8%;
 	background-size: 100%;
