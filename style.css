@@ -1,0 +1,56 @@
+body {
+	font-family: Julius Sans One;
+	background-color: white;
+	background: url("images/rolling.jpg");
+	background-repeat: no-repeat;
+	background-position: 0 -9%;
+	background-size: 100%;
+	position: relative;
+}
+
+#header {
+
+}
+
+#name {
+	text-align: center;
+	font-size:255%;
+	padding-left: 6%;
+}
+
+#info {
+	font-size:145%;
+	float: right;
+	padding-top:10px;
+}
+
+#contact {
+	padding-left: 10px; 
+}
+
+#resume {
+	padding-left: 10px; 
+}
+
+#projects {
+	padding-left: 10px; 
+}
+
+#about {
+	padding-left: 10px; 
+}
+
+a {
+	color:black;
+	text-decoration: none;
+}
+
+.quote {
+	text-align: center;
+	padding-top: 5%;
+	font-size: 400%;
+}
+
+.ampersand {
+	color: #808000;
+}
