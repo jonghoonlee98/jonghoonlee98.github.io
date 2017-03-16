@@ -5,16 +5,22 @@ body {
 	background-color: white;
 	background: url("images/rolling.jpg");
 	background-repeat: no-repeat;
-	background-position: 0 39px;
+	background-position: 0 0px;
 	background-size: 1550px;
 	position: relative;
 }
 
 #header {
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	border-color:black;
 	width:100%;
+	height:45px;
 	background-color:white;
 	position:fixed;
-	margin-top: -37px;
+	margin-top:-43.5px;
+	padding-top:15px;
+
 }
 
 #name {
@@ -23,9 +29,12 @@ body {
 }
 
 #info {
+    white-space: nowrap;
+    overflow: hidden;
 	color:grey;
 	margin-left:775px;
 	font-size:145%;
+	position:absolute;
 }
 
 #contact {
