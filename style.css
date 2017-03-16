@@ -53,7 +53,7 @@ body {
 	margin-left: 10px; 
 }
 
-a {
+.sections {
 	color: grey;
 	text-decoration: none;
 }
@@ -69,12 +69,13 @@ a {
 }
 
 #aboutInfo {
+	background-color: white;
 	border-size:2px;
 	border-style:solid;
 	border-color:black;
 	font-size:60px;
 	text-align: center;
-	margin-top: 800px;
+	margin-top: 597px;
 }
 
 .line {
@@ -89,5 +90,5 @@ a {
 
 #bio {
 	font-family:arial;
-	font-size:40%;
+	font-size:35%;
 }
