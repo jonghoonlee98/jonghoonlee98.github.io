@@ -2,55 +2,56 @@ body {
 	margin:0;
   	padding:0;
 	font-family: Julius Sans One;
-	background-color: white;
+	background-color: #F2F0F0;
 	background: url("images/rolling.jpg");
 	background-repeat: no-repeat;
-	background-position: 0 0px;
-	background-size: 1550px;
+	background-position: 0 0;
+	background-size: 100vw;
 	position: relative;
+	width: 98vw;
 }
 
 #header {
+	width:100vw;
 	border-bottom-style:solid;
-	border-bottom-width:1px;
+	border-bottom-width:0.1vw;
 	border-color:black;
-	width:100%;
-	height:45px;
+	height:3.1vw;
 	background-color:white;
 	position:fixed;
-	margin-top:-43.5px;
-	padding-top:15px;
-
+	margin-top:-3vw;
+	padding-top:.8vw;
 }
 
 #name {
-	font-size:30px;
-	padding-left: 50px;
+	font-size: 2.6vw;
+	margin-left: 5.5vw;
 }
 
 #info {
     white-space: nowrap;
     overflow: hidden;
 	color:grey;
-	margin-left:775px;
-	font-size:145%;
+	margin-left:42vw;
+	margin-top:0.5vw;
+	font-size:1.5vw;
 	position:absolute;
 }
 
 #contact {
-	margin-left: 10px; 
+	margin-left: 0.8vw; 
 }
 
 #resume {
-	margin-left: 10px; 
+	margin-left: 0.8vw; 
 }
 
 #projects {
-	margin-left: 10px; 
+	margin-left: 0.8vw; 
 }
 
 #about {
-	margin-left: 10px; 
+	margin-left: 0.8vw; 
 }
 
 .sections {
@@ -60,8 +61,8 @@ body {
 
 .quote {
 	text-align: center;
-	padding-top: 5%;
-	font-size: 400%;
+	padding-top: 50px;
+	font-size: 3.8vw;
 }
 
 .ampersand {
@@ -69,26 +70,27 @@ body {
 }
 
 #aboutInfo {
+	width:98vw;
 	background-color: white;
-	border-size:2px;
+	border-size:0.1vw;
 	border-style:solid;
 	border-color:black;
-	font-size:60px;
+	font-size:4vw;
 	text-align: center;
-	margin-top: 597px;
+	margin-top: 48vw;
 }
 
 .line {
-	margin-top: -60px;
+	margin-top: -5vw;
 	color: grey;
 }
 
 #picture {
 	margin-top: -25px;
-	height:250px;
+	height:15vw;
 }
 
 #bio {
 	font-family:arial;
-	font-size:35%;
+	font-size:1.6vw;
 }
