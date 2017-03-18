@@ -1,4 +1,5 @@
 body {
+	height:100%;
     max-width: 100%;
     overflow-x: hidden;
 	margin:0;
@@ -73,11 +74,13 @@ body {
 }
 
 #aboutInfo {
+	color:black;
+	background-color:white;
 	width:100vw;
-	background-color: white;
-	font-size:4vw;
+	font-size:3vw;
 	text-align: center;
-	margin-top: 44vw;
+	margin-top: 40vw;
+	padding-top:2vw;
 }
 
 .line {
@@ -85,24 +88,20 @@ body {
 	color: grey;
 }
 
-#picture {
-	margin-top: -25px;
-	height:15vw;
-}
-
 #bio {
 	font-family: "Times New Roman";
-	font-size:1.6vw;
+	font-size:1.2vw;
+	margin-top: -1.5vw;
 }
 
 #contactInfo {
-	color:white;
-	background-color:black;
+	color:black;
+	background-color:white;
 	width:100vw;
-	font-size:4vw;
+	font-size:3vw;
 	text-align: center;
 	margin-top: 6vw;
-	padding-top: 0.01vw;
+	padding-top: 2vw;
 }
 
 #copyright {
@@ -113,5 +112,5 @@ body {
 	background-color:#DCDCDC;
 	padding-bottom: 1vw;
 	padding-top: 1vw;
-	margin-top: -4vw;
+	margin-top: -3vw;
 }
