@@ -72,12 +72,9 @@ body {
 #aboutInfo {
 	width:98vw;
 	background-color: white;
-	border-size:0.1vw;
-	border-style:solid;
-	border-color:black;
 	font-size:4vw;
 	text-align: center;
-	margin-top: 48vw;
+	margin-top: 53vw;
 }
 
 .line {

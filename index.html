@@ -8,6 +8,21 @@
 <link rel="icon" href="images/tuftsicon.png"/>
 <link href='https://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'/>
 <meta charset="utf-8"/>
+<script>
+function load() {
+    var file = new XMLHttpRequest();
+    file.open("GET", "bio.txt", true);
+    file.onreadystatechange = function() {
+      if (file.readyState === 4) {  
+        if (file.status === 200) {  
+          text = file.responseText;
+          document.getElementById("aboutInfo").innerHTML = text;
+        }
+      }
+    }
+}
+window.onLoad = load();
+</script>
 </head>
 
 <body>
@@ -16,7 +31,7 @@
 		<span id="info">
 			<span id="about"><a class="sections" href="#aboutInfo">About</a></span>
 			<span id="projects">Projects</span>
-			<span id="resume">Resume</span>
+			<span id="resume"><a class="sections" href="Resume" target="_blank">Resume</a></span>
 			<span id="contact">Contact</span>		
 		</span>			
 	</div>
@@ -26,6 +41,9 @@
 		<p class="line">_________________________________________</p>
 		<img id="picture" src="images/picture.jpg"/>
 		<p id="bio">Hi! I'm Jong. I'm currently a full time student at <a href="https://www.tufts.edu/">Tufts University</a></p>
+	</div>
+	<div id="contactInfo">
+
 	</div>
 </body>
 </html>
