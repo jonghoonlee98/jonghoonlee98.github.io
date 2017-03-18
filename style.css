@@ -1,4 +1,6 @@
 body {
+    max-width: 100%;
+    overflow-x: hidden;
 	margin:0;
   	padding:0;
 	font-family: Julius Sans One;
@@ -8,13 +10,13 @@ body {
 	background-position: 0 0;
 	background-size: 100vw;
 	position: relative;
-	width: 98vw;
+	width: 100vw;
 }
 
 #header {
 	width:100vw;
 	border-bottom-style:solid;
-	border-bottom-width:0.1vw;
+	border-bottom-width:0.05vw;
 	border-color:black;
 	height:3.1vw;
 	background-color:white;
@@ -24,15 +26,16 @@ body {
 }
 
 #name {
-	font-size: 2.6vw;
+	font-size: 2.4vw;
 	margin-left: 5.5vw;
+	display: inline;
 }
 
 #info {
     white-space: nowrap;
     overflow: hidden;
-	color:grey;
-	margin-left:42vw;
+	color: 	#778899;
+	margin-left:52vw;
 	margin-top:0.5vw;
 	font-size:1.5vw;
 	position:absolute;
@@ -55,13 +58,13 @@ body {
 }
 
 .sections {
-	color: grey;
+	color: 	#778899;
 	text-decoration: none;
 }
 
 .quote {
 	text-align: center;
-	padding-top: 50px;
+	padding-top: 6vw;
 	font-size: 3.8vw;
 }
 
@@ -70,11 +73,11 @@ body {
 }
 
 #aboutInfo {
-	width:98vw;
+	width:100vw;
 	background-color: white;
 	font-size:4vw;
 	text-align: center;
-	margin-top: 53vw;
+	margin-top: 44vw;
 }
 
 .line {
@@ -88,6 +91,27 @@ body {
 }
 
 #bio {
-	font-family:arial;
+	font-family: "Times New Roman";
 	font-size:1.6vw;
+}
+
+#contactInfo {
+	color:white;
+	background-color:black;
+	width:100vw;
+	font-size:4vw;
+	text-align: center;
+	margin-top: 6vw;
+	padding-top: 0.01vw;
+}
+
+#copyright {
+	font-family: "Times New Roman";
+	font-weight: 5vw;
+	text-align:center;
+	width:100vw;
+	background-color:#DCDCDC;
+	padding-bottom: 1vw;
+	padding-top: 1vw;
+	margin-top: -4vw;
 }
