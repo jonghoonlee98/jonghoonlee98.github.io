@@ -37,7 +37,7 @@ body {
     white-space: nowrap;
     overflow: hidden;
 	color: 	#778899;
-	margin-left:53.5vw;
+	margin-left:52vw;
 	margin-top:0.9vw;
 	font-size:1.5vw;
 	position:absolute;
@@ -118,8 +118,9 @@ body {
 
 #logo {
 	display: inline;
-	height:2.7vw;
-	width:3.0vw;
-	margin-left:1vw;
-	margin-bottom:-0.3vw;
+	height:3.8vw;
+	width:5vw;
+	margin-left:0vw;
+	margin-top:-0.3vw;
+	margin-bottom:-1.2vw;
 }
