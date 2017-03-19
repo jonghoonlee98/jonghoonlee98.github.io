@@ -8,9 +8,25 @@
 <link rel="icon" href="images/browsericon.png"/>
 <link href='https://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'/>
 <meta charset="utf-8"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 600, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>
 </head>
 
-<body>
+<body onload=>
 	<div id="header">
 		<a href="index.html"><img id="logo" src="images/mylogo.png" href="index.html"/></a>
 		<h1 id="name">Jong Lee</h1>
