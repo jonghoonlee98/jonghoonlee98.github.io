@@ -19,7 +19,7 @@ body {
 	border-bottom-style:solid;
 	border-bottom-width:0.05vw;
 	border-color:black;
-	height:3.1vw;
+	height:3.5vw;
 	background-color:white;
 	position:fixed;
 	margin-top:-3vw;
@@ -28,16 +28,17 @@ body {
 
 #name {
 	font-size: 2.4vw;
-	margin-left: 5.5vw;
+	margin-left: .7vw;
 	display: inline;
+	margin-bottom:1vw;
 }
 
 #info {
     white-space: nowrap;
     overflow: hidden;
 	color: 	#778899;
-	margin-left:52vw;
-	margin-top:0.5vw;
+	margin-left:53.5vw;
+	margin-top:0.9vw;
 	font-size:1.5vw;
 	position:absolute;
 }
@@ -113,4 +114,12 @@ body {
 	padding-bottom: 1vw;
 	padding-top: 1vw;
 	margin-top: -3vw;
+}
+
+#logo {
+	display: inline;
+	height:2.7vw;
+	width:3.0vw;
+	margin-left:1vw;
+	margin-bottom:-0.3vw;
 }
