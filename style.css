@@ -9,6 +9,7 @@ body {
 }
 
 #header {
+	z-index:1;
 	margin:0;
   	padding:0;
 	width:100vw;
@@ -23,7 +24,7 @@ body {
 
 #logo {
 	height:4.3vw;
-	width:5vw;
+	width:5.5vw;
 	margin-bottom:-1.4vw;
 }
 
@@ -68,9 +69,16 @@ body {
 	text-decoration: none;
 }
 
-.quote {
+#quote {
 	text-align: center;
 	font-size: 3.8vw;
+}
+
+#downarrow {
+	height:2vw;
+	width:2vw;
+	margin-left: 50vw;
+	margin-bottom: -30vw;
 }
 
 .ampersand {
@@ -123,9 +131,10 @@ body {
 	text-align:center;
 	width:100vw;
 	background-color:#DCDCDC;
-	padding-bottom: 1vw;
-	padding-top: 1vw;
-	margin-top: -3vw;
+	padding-bottom: 0vw;
+	padding-top: 0vw;
+	margin-top: -1.7vw;
+	margin-bottom:-1.6vw;
 }
 
 .textdivider {
