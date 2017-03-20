@@ -1,15 +1,9 @@
 body {
-	height:100%;
-    max-width: 100%;
     overflow-x: hidden;
 	margin:0;
   	padding:0;
-	font-family: Julius Sans One;
+	font-family: "Julius Sans One";
 	background-color: #F2F0F0;
-	background: url("images/rolling.jpg");
-	background-repeat: no-repeat;
-	background-position: 0 0;
-	background-size: 100vw;
 	position: relative;
 	width: 100vw;
 }
@@ -24,9 +18,13 @@ body {
 	height:4.3vw;
 	background-color:white;
 	position:fixed;
-	margin-top:-3vw;
-	display:inline;
+	margin-top:0vw;
+}
 
+#logo {
+	height:4.3vw;
+	width:5vw;
+	margin-bottom:-1.4vw;
 }
 
 #name {
@@ -35,7 +33,6 @@ body {
 	font-size: 2.4vw;
 	margin-left: 1vw;
 	display: inline;
-	margin-top:-2vw;
 }
 
 #info {
@@ -44,8 +41,8 @@ body {
     white-space: nowrap;
     overflow: hidden;
 	color: 	#778899;
-	margin-left:52vw;
-	margin-top:1.5vw;
+	margin-left:68.5vw;
+	margin-top:-2.2vw;
 	font-size:1.5vw;
 	position:absolute;
 }
@@ -80,8 +77,16 @@ body {
 	color: #808000;
 }
 
+#welcomepage {
+	background: url("images/rolling.jpg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100vw;
+	height:50vw;
+}
+
 #aboutInfo {
-	font-family:Indie Flower;
+	font-family:"Indie Flower";
 	margin:0;
   	padding:0;
 	color:black;
@@ -89,7 +94,6 @@ body {
 	width:100vw;
 	font-size:4.5vw;
 	text-align: center;
-	margin-top: 40vw;
 	padding-top:0.1vw;
 }
 
@@ -100,7 +104,7 @@ body {
 }
 
 #contactInfo {
-	font-family:Indie Flower;
+	font-family:"Indie Flower";
 	margin:0;
   	padding:0;
 	color:black;
@@ -108,7 +112,6 @@ body {
 	width: 100vw;
 	font-size: 4.5vw;
 	text-align: center;
-	margin-top: 6vw;
 	padding-top: 0.1vw;
 }
 
@@ -125,15 +128,7 @@ body {
 	margin-top: -3vw;
 }
 
-#logo {
-	display: inline;
-	height:3.8vw;
-	width:5vw;
-	margin-top:0.5vw;
-	margin-bottom:-1.2vw;
-}
-
-#textdivider {
+.textdivider {
 	margin:0;
   	padding:0;
 	height:3.5vw;
