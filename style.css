@@ -15,6 +15,8 @@ body {
 }
 
 #header {
+	margin:0;
+  	padding:0;
 	width:100vw;
 	border-bottom-style:solid;
 	border-bottom-width:0.05vw;
@@ -27,6 +29,8 @@ body {
 }
 
 #name {
+	margin:0;
+  	padding:0;
 	font-size: 2.4vw;
 	margin-left: 1vw;
 	display: inline;
@@ -34,6 +38,8 @@ body {
 }
 
 #info {
+	margin:0;
+  	padding:0;
     white-space: nowrap;
     overflow: hidden;
 	color: 	#778899;
@@ -75,37 +81,40 @@ body {
 }
 
 #aboutInfo {
+	font-family:Indie Flower;
+	margin:0;
+  	padding:0;
 	color:black;
 	background-color:white;
 	width:100vw;
-	font-size:3vw;
+	font-size:4.5vw;
 	text-align: center;
 	margin-top: 40vw;
-	padding-top:2vw;
-}
-
-.line {
-	margin-top: -5vw;
-	color: grey;
+	padding-top:0.1vw;
 }
 
 #bio {
 	font-family: "Times New Roman";
 	font-size:1.2vw;
-	margin-top: -1.5vw;
+	margin-top: -7vw;
 }
 
 #contactInfo {
+	font-family:Indie Flower;
+	margin:0;
+  	padding:0;
 	color:black;
 	background-color:white;
-	width:100vw;
-	font-size:3vw;
+	width: 100vw;
+	font-size: 4.5vw;
 	text-align: center;
 	margin-top: 6vw;
-	padding-top: 2vw;
+	padding-top: 0.1vw;
 }
 
 #copyright {
+	margin:0;
+  	padding:0;
 	font-family: "Times New Roman";
 	font-weight: 5vw;
 	text-align:center;
@@ -123,4 +132,13 @@ body {
 	margin-left:0vw;
 	margin-top:-0.3vw;
 	margin-bottom:-1.2vw;
+}
+
+#textdivider {
+	margin:0;
+  	padding:0;
+	height:3.5vw;
+	width:40vw;
+	margin-bottom:6vw;
+	margin-top:-6vw;
 }
