@@ -17,15 +17,18 @@ body {
 	border-bottom-width:0.05vw;
 	border-color:black;
 	height:4.3vw;
-	background-color:white;
 	position:fixed;
-	margin-top:0vw;
+	background: url("images/tuftsicon.png");
+	background-repeat: no-repeat;
+	background-position: 18.5vw 0.2vw;
+	background-size: 4vw;
+	background-color:white;
 }
 
 #logo {
 	height:4.3vw;
-	width:5.6vw;
-	margin-bottom:-1.4vw;
+	width:5.3vw;
+	margin-bottom: -1.4vw;
 }
 
 #name {
@@ -34,6 +37,13 @@ body {
 	font-size: 2.4vw;
 	margin-left: 1vw;
 	display: inline;
+}
+
+#jumbo {
+	height:4.2vw;
+	width:5.2vw;
+	padding-left:0.5vw;
+	display:inline;
 }
 
 #info {
