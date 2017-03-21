@@ -18,17 +18,13 @@ body {
 	border-color:black;
 	height:4.3vw;
 	position:fixed;
-	background: url("images/tuftsicon.png");
-	background-repeat: no-repeat;
-	background-position: 18.5vw 0.2vw;
-	background-size: 4vw;
 	background-color:white;
 }
 
 #logo {
 	height:4.3vw;
 	width:5.3vw;
-	margin-bottom: -1.4vw;
+	margin-bottom:-1.3vw;
 }
 
 #name {
