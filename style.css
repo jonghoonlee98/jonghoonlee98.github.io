@@ -19,6 +19,7 @@ body {
 	height:4.3vw;
 	position:fixed;
 	background-color:white;
+	-webkit-transform: translateZ(0);
 }
 
 #logo {
