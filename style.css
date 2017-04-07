@@ -156,11 +156,11 @@ body {
 #copyright {
 	margin:0;
   	padding:0;
-	font-family: "Times New Roman";
+	font-family: "Arial";
 	text-align:center;
 	width:100vw;
 	padding-bottom:0.1vw;
 	margin-top:-3.5vw;
-	background-color:#87DFD6;
+	background-color:white;
 	font-size:1.0vw;
 }
