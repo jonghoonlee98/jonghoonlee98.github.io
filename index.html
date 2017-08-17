@@ -1,66 +1,46 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
-<title>Jong Lee</title>
-<link rel="stylesheet" href="style.css"/>
-<link rel="icon" href="images/browsericon.png"/>
-<link href='https://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'/>
-<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet" type="text/css"/>
-<meta charset="utf-8"/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("a").on('click', function(event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 600, function(){
-        window.location.hash = hash;
-      });
-    }
-  });
-});
-</script>
+	<title>Jong Lee</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="style.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Saira" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script>
+	$( function() {
+			$( "#bar" ).draggable();
+			//$( "#bar" ).draggable({containment:"window"});
+	} );
+	</script>
 </head>
 
 <body>
-	<div id="header">
-		<a href="index.html"><img id="logo" src="images/mylogo.png" alt=""/></a>
-		<h1 id="name">Jong Lee</h1>
-		<div id="info">
-			<span id="about"><a class="sections" href="#aboutInfo">About</a></span>
-			<span id="projects">Projects</span>
-			<span id="resume"><a class="sections" href="Resume" target="_blank">Resume</a></span>
-			<span id="contact"><a class="sections" href="#contactInfo">Contact</a></span>		
-		</div>			
+	<div id="files">
+		<div id="row1">
+			<button type="button" id="projects">Projects</button>
+			<button type="button" id="education">Education</button>
+			<button type="button" id="hobbies">Hobbies</button>
+		</div>
+		<div id="row2">
+			<button type="button" id="terminal">Terminal</button>
+			<a href="https://drive.google.com/file/d/0B-W5xjcJ4jjReEpEQVJsLTF4ZGs/view?usp=sharing" target="_blank"><button type="button" id="resume">Resume</button></a>
+			<a href="mailto:jong.lee@tufts.edu"><button type="button" id="email">Email</button></a>
+		</div>
+		<div id="row3">
+			<a href="https://github.com/jonghoonlee98" target="_blank"><button type="button" id="github">Github</button></a>
+			<a href="https://www.instagram.com/jonghoonl/" target="_blank"><button type="button" id="ig">Instagram</button></a>
+			<a href="https://www.linkedin.com/in/jong-hoon-lee-a5934812a/" target="_blank"><button type="button" id="linkedin">LinkedIn</button></a>
+		</div>
 	</div>
-	<br/>
-	<div id="welcomepage">
-	<div id="quote"><p></p></div>
+	<div id="folder">	
+	</div>
+	<div id="doc">
+		<div id="bar"></div>
+		<p></p>
 	</div>
 
-	<div id="aboutInfo">
-	<br>
-		<h1>About</h1>
-		<p id="bio">Hi! I'm Jong. I'm currently a full time student at <a href="https://www.tufts.edu/" target="_blank">Tufts University</a>. I am most interested in web development and game design. Besides programming, I like to play guitar and video games during my free time. I use a Breedlove Solo Concert guitar and like to play songs that involve fingerpicking. As for video games, I'm a very avid PC gamer. Some of my favorite games are League of Legends, Overwatch, Super Smash Bros Melee, Starcraft II, and CS:GO.</p>
-		<br>
-	</div>
-	<div id="contactInfo">
-		<br>
-		<h1>Contact</h1>
-		<a href="https://github.com/jonghoonlee98" target="_blank"><img id=githubicon src="images/githubicon.png" alt=""/></a>
-		<a href="https://www.instagram.com/jonghoonl/" target="_blank"><img id=instagramicon src="images/instagramicon.png" alt=""/></a>
-		<a href="https://www.linkedin.com/in/jong-hoon-lee-a5934812a/" target="_blank"><img id=linkedinicon src="images/linkedinicon.png" alt=""/></a>
-		<p>Email: jonghoonlee98@gmail.com</p>
-		
-	</div>
-	<div id="copyright">
-		<p><br>2017 Jong Hoon Lee.</p>
-	</div>
 </body>
 
 </html>

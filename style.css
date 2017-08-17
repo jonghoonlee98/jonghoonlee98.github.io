@@ -1,166 +1,202 @@
-body {
-    overflow-x: hidden;
-	margin:0;
-  	padding:0;
-	font-family: "Julius Sans One";
-	position: relative;
-	width: 100vw;
+html {
+	background: url("images/background1.jpg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    font-family:"Saira";
 }
 
-#header {
-	z-index:1;
-	margin:0;
-  	padding:0;
-	width:100vw;
-	border-bottom-style:solid;
-	border-bottom-width:0.05vw;
-	border-color:black;
-	height:4.3vw;
-	position:fixed;
-	background-color: white;
+#bar {
+    border:solid;
+    text-align:center;
+    width:700px;
+    height:25px;
+    background-color:#F8F8FF;
+    margin-top:-400px;
+    margin-left:30px;
+    position:fixed;
 }
 
-#logo {
-	height:4.3vw;
-	width:5.3vw;
-	margin-bottom:-1.3vw;
+#files{
+    margin-left:40%;
+    margin-top:12%;
 }
 
-#name {
-	margin:0;
-  	padding:0;
-	font-size: 2.4vw;
-	margin-left: 1vw;
-	display: inline;
+#projects{
+    font-family:"Saira";
+    color:white;
+    background:url("images/folder.png") no-repeat;
+    background-position: 16px 0px;
+    cursor:pointer;
+    border:none;
+    width:100px;
+    height:100px;
+    padding-right:5px;
+    padding-top:57px;
 }
 
-#info {
-	margin:0;
-  	padding:0;
-    white-space: nowrap;
-    overflow: hidden;
-	color: 	#778899;
-	margin-left:68.5vw;
-	margin-top:-2.1vw;
-	font-size:1.5vw;
-	position:absolute;
+#projects:hover
+{   
+    filter: invert(100%);
+    color: black;
 }
 
-#contact {
-	margin-left: 0.8vw; 
+#education{
+    font-family:"Saira";
+    color:white;
+    background:url("images/folder.png") no-repeat;
+    background-position: 16px 0px;
+    cursor:pointer;
+    border:none;
+    width:100px;
+    height:100px;
+    padding-right:5px;
+    padding-top:57px;
 }
 
-#resume {
-	margin-left: 0.8vw; 
+#education:hover
+{
+    filter:invert(100%);
+    color:black;
 }
 
-#projects {
-	margin-left: 0.8vw; 
+#hobbies{
+    font-family:"Saira";
+    color:white;
+    background:url("images/folder.png") no-repeat;
+    background-position: 16px 0px;
+    cursor:pointer;
+    border:none;
+    width:100px;
+    height:100px;
+    padding-right:5px;
+    padding-top:57px;
 }
 
-#about {
-	margin-left: 0.8vw; 
+#hobbies:hover
+{
+    filter:invert(100%);
+    color:black;
 }
 
-.sections {
-	color: 	#778899;
-	text-decoration: none;
+#resume{
+    font-family:"Saira";
+    color:white;
+    background:url("images/word.png") no-repeat;
+    background-position: 12px 5px;
+    cursor:pointer;
+    border:none;
+    width:100px;
+    height:100px;
+    padding-right:10px;
+    padding-top:72px;
 }
 
-#quote {
-	text-align: center;
-	font-size: 3.8vw;
-	background: url("images/trie.png");
-	background-repeat: no-repeat;
-	background-size:23vw;
-	margin-left:40vw;
-	height:50vw;
-	background-position: 0 0;
+#resume:hover
+{
+    filter:invert(100%);
+    color:black;
 }
 
-#downarrow {
-	height:2vw;
-	width:2vw;
-	margin-left: 50vw;
-	margin-bottom: -30vw;
+#row2
+{
+    display:block;
 }
 
-.ampersand {
-	color: #808000;
+#row3
+{
+    display:block;
 }
 
-#welcomepage {
-	background: url("images/rolling.jpg");
-	background-repeat: no-repeat;
-	background-position: 0 0;
-	background-size: 100vw;
-	height:50vw;
-	border-bottom-style:solid;
-	border-bottom-width:0.05vw;
-	border-color:black;
-	padding-top:1vw;
+#github{
+    font-family:"Saira";
+    color:white;
+    background:url("images/github.png") no-repeat;
+    background-position: 7px 2.5px;
+    cursor:pointer;
+    border:none;
+    width:100px;
+    height:100px;
+    padding-top:80px;
 }
 
-#aboutInfo {
-	font-family:"Indie Flower";
-	margin:0;
-  	padding:0;
-	width:100vw;
-	text-align: center;
-	font-size:2vw;
-	padding-top: 0.1vw;
-	background-color:#DFF5F2;
+#github:hover
+{
+    filter:invert(100%);
+    color:black;
 }
 
-#bio {
-	font-family: "Indie Flower";
-	font-size:1.5vw;
-	width: 60vw;
-	margin-left:18vw;
+#ig{
+    font-family:"Saira";
+    color:white;
+    background:url("images/insta.png") no-repeat;
+    background-position: 19px 7px;
+    cursor:pointer;
+    border:none;
+    width:100px;
+    height:100px;
+    padding-top:67px;
 }
 
-#contactInfo {
-	font-family:"Indie Flower";
-	margin:0;
-  	padding:0;
-	color:black;
-	background-color:#2F9296;
-	width: 100vw;
-	font-size: 2vw;
-	text-align: center;
-	margin-top:0vw;
-	padding-top: 0.1vw;
-	padding-bottom:2vw;
+#ig:hover
+{
+    filter:invert(100%);
+    color:black;
 }
 
-#githubicon {
-	display:inline;
-	height:7vw;
-	width:7vw;
+#linkedin{
+    font-family:"Saira";
+    color:white;
+    background:url("images/in.png") no-repeat;
+    background-position: 12px 4px;
+    cursor:pointer;
+    border:none;
+    width:100px;
+    height:100px;
+    padding-top:75px;
 }
 
-#instagramicon {
-	display:inline;
-	height:7vw;
-	width:7vw;
+#linkedin:hover
+{
+    filter:invert(100%);
+    color:black;
 }
 
-#linkedinicon {
-	display:inline;
-	height:5.6vw;
-	width:5.6vw;
-	margin-left:0.5vw;
-	margin-bottom:0.6vw;
+#email{
+    font-family:"Saira";
+    color:white;
+    background:url("images/gmail.png") no-repeat;
+    background-position: 14px 4px;
+    cursor:pointer;
+    border:none;
+    width:100px;
+    height:100px;
+    padding-top:72px;
+    padding-right:8px;
 }
 
-#copyright {
-	margin:0;
-  	padding:0;
-	font-family: "Arial";
-	text-align:center;
-	width:100vw;
-	padding-bottom:0.1vw;
-	margin-top:-3.5vw;
-	background-color:white;
-	font-size:1.0vw;
+#email:hover
+{
+    filter:invert(100%);
+    color:black;
+}
+
+#terminal{
+    font-family:"Saira";
+    color:white;
+    background:url("images/terminal.png") no-repeat;
+    background-position: 14px 13px;
+    cursor:pointer;
+    border:none;
+    width:100px;
+    height:100px;
+    padding-top:80px;
+    padding-right:9px;
+}
+
+#terminal:hover
+{
+    filter:invert(100%);
+    color:black;
 }
