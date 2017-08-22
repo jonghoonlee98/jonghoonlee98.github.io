@@ -5,42 +5,111 @@
 	<title>Jong Lee</title>
 	<meta charset="utf-8"/>
 	<link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="images.css"/>
+	<link rel="stylesheet" href="window.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Saira" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<script>
-	$( function() {
-			$( "#bar" ).draggable();
-			//$( "#bar" ).draggable({containment:"window"});
-	} );
-	</script>
+	<script src="myscript.js"></script>
 </head>
 
 <body>
 	<div id="files">
 		<div id="row1">
-			<button type="button" id="projects">Projects</button>
-			<button type="button" id="education">Education</button>
-			<button type="button" id="hobbies">Hobbies</button>
+			<button type="button" id="projects" class="file" onclick="openwindow('Projects')">Projects</button>
+			<button type="button" id="education" class="file" onclick="openwindow('Education')">Education</button>
+			<button type="button" id="hobbies" class="file" onclick="openwindow('Hobbies')">Hobbies</button>
 		</div>
 		<div id="row2">
-			<button type="button" id="terminal">Terminal</button>
-			<a href="https://drive.google.com/file/d/0B-W5xjcJ4jjReEpEQVJsLTF4ZGs/view?usp=sharing" target="_blank"><button type="button" id="resume">Resume</button></a>
-			<a href="mailto:jong.lee@tufts.edu"><button type="button" id="email">Email</button></a>
+			<button type="button" class="file" id="terminal">Terminal</button>
+			<a href="https://drive.google.com/file/d/0B-W5xjcJ4jjReEpEQVJsLTF4ZGs/view?usp=sharing" target="_blank"><button type="button" id="resume" class="file">Resume</button></a>
+			<a href="mailto:jong.lee@tufts.edu" target="_blank"><button type="button" id="email" class="file">Email</button></a>
 		</div>
 		<div id="row3">
-			<a href="https://github.com/jonghoonlee98" target="_blank"><button type="button" id="github">Github</button></a>
-			<a href="https://www.instagram.com/jonghoonl/" target="_blank"><button type="button" id="ig">Instagram</button></a>
-			<a href="https://www.linkedin.com/in/jong-hoon-lee-a5934812a/" target="_blank"><button type="button" id="linkedin">LinkedIn</button></a>
+			<a href="https://github.com/jonghoonlee98" target="_blank"><button type="button" id="github" class="file">Github</button></a>
+			<a href="https://www.instagram.com/jonghoonl/" target="_blank"><button type="button" id="ig" class="file">Instagram</button></a>
+			<a href="https://www.linkedin.com/in/jong-hoon-lee-a5934812a/" target="_blank"><button type="button" id="linkedin" class="file">LinkedIn</button></a>
 		</div>
 	</div>
 	<div id="folder">	
 	</div>
-	<div id="doc">
-		<div id="bar"></div>
-		<p></p>
+	<div id="window">
+		<div id="bar">
+			<button type="button" id="close" onclick="closewindow()"></button>
+		</div>
+		<div id="sub1">
+			<button id="projectfolder" class="sub1folder" onclick="openwindow('Projects')">Projects</button>
+			<button id="educationfolder" class="sub1folder" onclick="openwindow('Education')">&nbsp&nbsp&nbspEducation</button>
+			<button id="hobbiesfolder" class="sub1folder" onclick="openwindow('Hobbies')">Hobbies</button>
+		</div>
+		<div id="sub2">
+			<button id="gerpfolder" class="sub2folder" onclick="selectfile('gerp')">Gerp</button>
+			<button id="afactsfolder" class="sub2folder" onclick="selectfile('afacts')">Alternative Facts</button>
+			<button id="nocgootfolder" class="sub2folder" onclick="selectfile('nocgoot')">Nocgoot</button>			
+			<button id="lhsfolder" class="sub2folder" onclick="selectfile('lhs')">Leonia High School</button>
+			<button id="tuftsfolder" class="sub2folder" onclick="selectfile('tufts')">Tufts University</button>
+			<button id="guitarfolder" class="sub2folder" onclick="selectfile('guitar')">Guitar</button>
+			<button id="gamesfolder" class="sub2folder" onclick="selectfile('games')">Games</button>
+			<button id="watchesfolder" class="sub2folder" onclick="selectfile('watches')">Watches</button>
+		</div>
+		<div id="sub3">
+			<span id="gerp" class="sub3">
+				<img src="images/gerp.png" alt="Pic Unavailable"/>
+				<h4>It's like grep but called gerp! gerp is a program that will find all instances of a word, case sensitive or insensitive, and return all the locations where the word was found. The data structure I used to maximize efficiency was a trie.</h4>
+				<h4>When: April 2017</h4>
+				<h4><a href="https://github.com/jonghoonlee98/gerp" target="_blank">Code</a></h4>
+			</span>
+			<span id="afacts" class="sub3">
+				<img src="images/afacts.png" alt="Pic Unavailable"/>
+				<h4><a href="http://comp20-s2017-team13.herokuapp.com/" target="_blank">Link</a></h4>
+				<h4>A game where players receive three facts, two of which are true and one of which is false. Players have to identify the false fact. We used MongoDB as our database and Heroku as our platform.</h4>
+				<h4>When: March-April 2017</h4>
+				<h4><a href="https://github.com/jonghoonlee98/alternativefacts" target="_blank">Code</a></h4>
+			</span>
+			<span id="nocgoot" class="sub3">
+				<img src="images/nocgoot.png" alt="Pic Unavailable"/>
+				<h4>A game made in C++ using the SFML library. The player has to collect stars and dodge a particle that chases around and randomly bouncing particles. It stands for "no one can get over one thousand".</h4>
+				<h4>When: June 2017</h4>
+				<h4><a href="https://github.com/jonghoonlee98/cppgames/tree/master/nocgoot" target="_blank">Code</a></h4>
+			</span>
+			<span id="lhs" class="sub3">
+				<img src="images/lhs.png" alt="Pic Unavailable"/>
+				<h3><a href="http://lhs.leoniaschools.org/" target="_blank">Leonia High School</a></h3>
+				<h3>Location: Leonia, NJ</h3>
+				<h3>Class of 2016</h3>
+				<h3>Science Academy</h3>
+				<h3>GPA: 4.6 (weighted)</h3>
+			</span>
+			<span id="tufts" class="sub3">
+				<img src="images/tufts.png" alt="Pic Unavailable"/>
+				<h3><a href="https://www.tufts.edu/" target="_blank">Tufts University</a></h3>
+				<h3>Location: Medford, MA</h3>
+				<h3>Class of 2020</h3>
+				<h3>Major: Computer Science</h3>
+				<h3>GPA: 3.9 (unweighted)</h3>
+			</span>
+			<span id="guitar" class="sub3">
+				<img src="images/breedlove.png" alt="Pic Unavailable"/>
+				<h4>Type: Breedlove Solo Concert Guitar</h4>
+				<h4>Strings: Elixir 80/20 Bronze, L/M</h4>
+				<h4>Style: Fingerpicking</h4>
+				<h4>Duration: 5-6 years</h4>
+				<h4>Favorite Song: <a href="https://www.youtube.com/watch?v=Dic27EnDDls" target="_blank">걱정말아요 그대 (Don't Worry)</a></h4>
+			</span>
+			<span id="games" class="sub3">
+				<img src="images/games.png" alt="Pic Unavailable"/>
+				<h4>I'm a pretty avid gamer so if you want to play together, hmu!</h4>
+				<p>LoL ID: <a href="https://na.op.gg/summoner/userName=jongbo" target="_blank">Jongbo</a></p>
+				<p>Steam ID: <a href="http://steamcommunity.com/id/jonghoonlee98" target="_blank">jonghoonlee98</a></p>
+				<p>Battle.net ID: isaacnunuton#1997</p>
+				<p>SSBM Main: Marth</p>
+			</span>
+			<span id="watches" class="sub3">
+				<img src="images/watches.png" alt="Pic Unavailable"/>
+				<p>-DW Classic Sheffield<br/>-DW Classic Black Sheffield<br/>-Fossil Grant Chronograph<br/>-MVMT Classic Series<br/>-Tommy Hilfiger George<br/>-Casio Edifice</p>
+			</span>
+		</div>
 	</div>
-
 </body>
 
 </html>

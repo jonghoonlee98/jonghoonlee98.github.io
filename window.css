@@ -1,0 +1,81 @@
+#window{
+    border:solid;
+    width:850px;
+    height:550px;
+    background-color:rgba(255, 255, 255, .9);
+    top:5%;
+    left:5%;
+    position:fixed;
+    display:none;
+}
+
+#bar {
+    background: no-repeat;
+    background-position: 47% 45%;
+    font-family:"Saira";
+    font-size:20px;
+    border-bottom:solid;
+    border-bottom-width:0.5px;
+    background-color:white;
+}
+
+#close {
+    background:url("images/close.png") no-repeat;
+    margin-left:96%;
+    height:32px;
+    width:32px;
+    cursor:pointer;
+    border:none;
+    outline:none;
+}
+
+#sub1 {
+    float:left;
+    width:159px;
+    height:93.5%;
+    border-right:solid;
+    border-width:0.5px;
+    border-color:grey;
+}
+
+#sub2 {
+    float:left;
+    width:239px;
+    height:93.5%;
+    border-right:solid;
+    border-width:0.5px;
+    border-color:grey;
+}
+
+#sub3 {
+    float:left;
+    width:450px;
+    height:93.5%;
+    
+}
+
+.sub1folder {
+    font-family:"Saira";
+    font-size:20px;
+    font-weight:bold;
+    width:159px;
+    height:35px;
+    left:0px;
+    border:none;
+    background:url("images/smallfolder.png") no-repeat;
+    outline:none;
+    text-align:center;
+}
+
+.sub2folder {
+    font-family:"Saira";
+    font-size:20px;
+    border:none;
+    width:239px;
+    display:none;
+    outline:none;
+}
+
+.sub3 {
+    text-align:center;
+}

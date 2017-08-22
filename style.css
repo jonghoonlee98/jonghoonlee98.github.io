@@ -7,96 +7,85 @@ html {
     font-family:"Saira";
 }
 
-#bar {
-    border:solid;
-    text-align:center;
-    width:700px;
-    height:25px;
-    background-color:#F8F8FF;
-    margin-top:-400px;
-    margin-left:30px;
-    position:fixed;
+#files{
+    margin-top:12%;
+    margin-left:40%;
 }
 
-#files{
-    margin-left:40%;
-    margin-top:12%;
+.file {
+    font-family:"Saira";
+    font-size:18px;
+    color:white;
+    cursor:pointer;
+    border:none;
+    outline:none;
+    width:100px;
+    height:100px;
+}
+
+.file:hover {
+    filter: invert(100%);
+    font-color: black;
 }
 
 #projects{
-    font-family:"Saira";
-    color:white;
     background:url("images/folder.png") no-repeat;
     background-position: 16px 0px;
-    cursor:pointer;
-    border:none;
-    width:100px;
-    height:100px;
     padding-right:5px;
     padding-top:57px;
-}
-
-#projects:hover
-{   
-    filter: invert(100%);
-    color: black;
 }
 
 #education{
-    font-family:"Saira";
-    color:white;
     background:url("images/folder.png") no-repeat;
     background-position: 16px 0px;
-    cursor:pointer;
-    border:none;
-    width:100px;
-    height:100px;
     padding-right:5px;
     padding-top:57px;
-}
-
-#education:hover
-{
-    filter:invert(100%);
-    color:black;
 }
 
 #hobbies{
-    font-family:"Saira";
-    color:white;
     background:url("images/folder.png") no-repeat;
     background-position: 16px 0px;
-    cursor:pointer;
-    border:none;
-    width:100px;
-    height:100px;
     padding-right:5px;
     padding-top:57px;
 }
 
-#hobbies:hover
-{
-    filter:invert(100%);
-    color:black;
-}
-
 #resume{
-    font-family:"Saira";
-    color:white;
     background:url("images/word.png") no-repeat;
     background-position: 12px 5px;
-    cursor:pointer;
-    border:none;
-    width:100px;
-    height:100px;
     padding-right:10px;
     padding-top:72px;
 }
 
-#resume:hover
-{
-    filter:invert(100%);
-    color:black;
+#github{
+    background:url("images/github.png") no-repeat;
+    background-position: 7px 2.5px;
+    padding-top:80px;
+}
+
+#ig{
+    background:url("images/insta.png") no-repeat;
+    background-position: 19px 7px;
+    padding-top:67px;
+}
+
+#linkedin{
+    background:url("images/in.png") no-repeat;
+    background-position: 12px 4px;
+    padding-top:75px;
+}
+
+#email{
+    background:url("images/gmail.png") no-repeat;
+    background-position: 14px 4px;
+    padding-top:72px;
+    padding-right:8px;
+}
+
+#terminal{
+    background:url("images/terminal.png") no-repeat;
+    background-position: 14px 13px;
+    padding-top:75px;
+    padding-right:9px;
 }
 
 #row2
@@ -107,96 +96,4 @@ html {
 #row3
 {
     display:block;
-}
-
-#github{
-    font-family:"Saira";
-    color:white;
-    background:url("images/github.png") no-repeat;
-    background-position: 7px 2.5px;
-    cursor:pointer;
-    border:none;
-    width:100px;
-    height:100px;
-    padding-top:80px;
-}
-
-#github:hover
-{
-    filter:invert(100%);
-    color:black;
-}
-
-#ig{
-    font-family:"Saira";
-    color:white;
-    background:url("images/insta.png") no-repeat;
-    background-position: 19px 7px;
-    cursor:pointer;
-    border:none;
-    width:100px;
-    height:100px;
-    padding-top:67px;
-}
-
-#ig:hover
-{
-    filter:invert(100%);
-    color:black;
-}
-
-#linkedin{
-    font-family:"Saira";
-    color:white;
-    background:url("images/in.png") no-repeat;
-    background-position: 12px 4px;
-    cursor:pointer;
-    border:none;
-    width:100px;
-    height:100px;
-    padding-top:75px;
-}
-
-#linkedin:hover
-{
-    filter:invert(100%);
-    color:black;
-}
-
-#email{
-    font-family:"Saira";
-    color:white;
-    background:url("images/gmail.png") no-repeat;
-    background-position: 14px 4px;
-    cursor:pointer;
-    border:none;
-    width:100px;
-    height:100px;
-    padding-top:72px;
-    padding-right:8px;
-}
-
-#email:hover
-{
-    filter:invert(100%);
-    color:black;
-}
-
-#terminal{
-    font-family:"Saira";
-    color:white;
-    background:url("images/terminal.png") no-repeat;
-    background-position: 14px 13px;
-    cursor:pointer;
-    border:none;
-    width:100px;
-    height:100px;
-    padding-top:80px;
-    padding-right:9px;
-}
-
-#terminal:hover
-{
-    filter:invert(100%);
-    color:black;
 }
