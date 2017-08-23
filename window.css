@@ -17,16 +17,19 @@
     border-bottom:solid;
     border-bottom-width:0.5px;
     background-color:white;
+    height:41px;
 }
 
 #close {
     background:url("images/close.png") no-repeat;
-    margin-left:96%;
+    margin-left:95.7%;
+    margin-top:0.5%;
     height:32px;
     width:32px;
     cursor:pointer;
     border:none;
     outline:none;
+    position:absolute;
 }
 
 #sub1 {
