@@ -1,4 +1,6 @@
 function closewindow() {
+	$('#sub2').show();
+	$('.sub2folder').show();
 	$( "#window" ).hide();
 }
 
@@ -83,6 +85,12 @@ function selectfile(ftype) {
 		$('#watchesfolder').css('border-width','0.5px');	
 		$('#watchesfolder').css('background-color','rgba(200, 200, 200, .9)');
 		$( "#watches" ).show();			
+	}
+
+	if ($(window).width() < 500) {
+		$('#sub2').hide();
+		$('.sub2folder').hide();
+		$('#sub3').show();
 	}
 }
 

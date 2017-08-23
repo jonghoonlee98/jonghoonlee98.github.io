@@ -1,0 +1,53 @@
+@media only screen and (max-width: 500px) {
+    #files {
+        margin-left:6% !important;
+    }
+    #sub1 {
+        display:none !important;
+    }
+    #sub3 {
+        width:100% !important;
+        display:none;
+    }
+    #window {
+        width:98% !important;
+        height:99% !important;
+        position: fixed !important; 
+        top: 0 !important; 
+        left: 0 !important;
+    }
+    #close {
+        margin-left:90% !important;
+        margin-top:1% !important;
+    }
+    #sub2 {
+        width:100% !important;
+    }
+    .sub2folder {
+        width:100% !important;
+    }
+    #gerp {
+        margin-left:6%;
+    }
+    #afacts {
+        margin-left:14%;
+    }
+    #nocgoot {
+        margin-left:14%;
+    }
+    #lhs {
+        margin-left:37%;
+    }
+    #tufts {
+        margin-left:26%;
+    }
+    #guitar {
+        margin-left:0%;
+    }
+    #games {
+        margin-left:0%;
+    }
+    #watches {
+        margin-left:20%;
+    }
+}
