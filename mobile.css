@@ -1,4 +1,7 @@
 @media only screen and (max-width: 500px) {
+    html {
+        background: url("images/background1.jpg") no-repeat center center fixed !important; 
+    }
     #files {
         margin-left:6% !important;
     }
@@ -10,8 +13,8 @@
         display:none;
     }
     #window {
-        width:100% !important;
-        height:100% !important;
+        width:99% !important;
+        height:99.5% !important;
         position: fixed !important; 
         top: 0 !important; 
         left: 0 !important;
