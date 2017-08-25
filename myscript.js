@@ -33,6 +33,7 @@ function openwindow(ftype) {
 		$( "#gamesfolder" ).show();
 		$( "#watchesfolder" ).show();
 	}
+
 }
 
 function selectfile(ftype) {
