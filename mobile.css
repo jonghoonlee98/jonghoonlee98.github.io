@@ -2,9 +2,6 @@
     html {
         background: url("images/background1.jpg") no-repeat center center fixed !important; 
     }
-    #files {
-        margin-left:11% !important;
-    }
     #sub1 {
         display:none !important;
     }
@@ -23,6 +20,10 @@
         margin-left:91% !important;
         margin-top:1% !important;
     }
+    #back {
+        /*display:inline !important;*/
+        margin-left:84% !important;
+    }
     #sub2 {
         width:100% !important;
     }
@@ -37,50 +38,21 @@
         width:98.2% !important;
         height:99.2% !important;
     }
-    #files {
-        margin-left:6% !important;
-    }
     #close {
         margin-left:90% !important;
+    }
+    #back {
+        margin-left:82% !important;
     }
 }
 
 @media only screen and (max-width: 350px) {
-    html {
-        background: url("images/background1.jpg") no-repeat center center fixed !important; 
-    }
-    #close {
-        margin-left:89% !important;
-    }
     #files {
-        margin-left:11% !important;
-    }
-    .file {
-        width:80px !important;
-        height:80px !important;
-        font-size:15px !important;
-        background-position: 0px 0px !important;
-        padding-right:20px !important;
-        padding-top:65px !important;
-    }
-    #github {
-        background-position: -8px -8px !important;
-        padding-top:-3px !important;
-    }
-    #ig {
-        background-position: 7px 2px !important;
-        padding-right:20px !important;
-    }
-    #linkedin {
-        background-position: -4px -4px !important;
-    }
-    #resume {
-        background-position:0px 0px !important;
-    }
-    #gamepic {
-        width:300px !important;
-    }
-    #guitarpic {
-        width:300px !important;
+      position:fixed;
+      transform: scale(0.9, 0.9);
+      -ms-transform: scale(0.9, 0.9); /* IE 9 */
+      -webkit-transform: scale(0.9, 0.9); /* Safari and Chrome */
+      -o-transform: scale(0.9, 0.9); /* Opera */
+      -moz-transform: scale(0.9, 0.9); /* Firefox */
     }
 }

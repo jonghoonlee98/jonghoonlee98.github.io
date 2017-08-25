@@ -1,3 +1,5 @@
+var currentwindow;
+
 function closewindow() {
 	$('#sub2').show();
 	$('.sub2folder').show();
@@ -8,6 +10,7 @@ function openwindow(ftype) {
 	$( "#window" ).show();
 	resetfolder();
 	if(ftype=="Projects") {
+		currentwindow="Projects";
 		$('#bar').css('background-image', 'url(' + 'images/projects.png' + ')');
 		$('#projectfolder').css('border','solid');
 		$('#projectfolder').css('border-width','0.5px');
@@ -17,6 +20,7 @@ function openwindow(ftype) {
 		$( "#afactsfolder" ).show();
 	}
 	else if (ftype=="Education") {
+		currentwindow="Education";
 		$('#bar').css('background-image', 'url(' + 'images/education.png' + ')');
 		$('#educationfolder').css('border','solid');
 		$('#educationfolder').css('border-width','0.5px');
@@ -25,6 +29,7 @@ function openwindow(ftype) {
 		$( "#tuftsfolder" ).show();
 	}
 	else if (ftype=="Hobbies") {
+		currentwindow="Hobbies";
 		$('#bar').css('background-image', 'url(' + 'images/hobbies.png' + ')');
 		$('#hobbiesfolder').css('border','solid');
 		$('#hobbiesfolder').css('border-width','0.5px');
@@ -33,7 +38,6 @@ function openwindow(ftype) {
 		$( "#gamesfolder" ).show();
 		$( "#watchesfolder" ).show();
 	}
-
 }
 
 function selectfile(ftype) {
@@ -144,6 +148,11 @@ function resetsub3() {
 	$( "#watches" ).hide();
 }
 
+function back() {
+
+}
+
 $( function() {
 		$( "#window" ).draggable({handle:"#bar"});
 } );
+

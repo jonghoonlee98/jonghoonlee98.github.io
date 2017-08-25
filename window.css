@@ -21,9 +21,22 @@
 }
 
 #close {
-    background:url("images/close.png") no-repeat;
     margin-left:95.7%;
     margin-top:0.5%;
+    background:url("images/close.png") no-repeat;
+    height:32px;
+    width:32px;
+    cursor:pointer;
+    border:none;
+    outline:none;
+    position:absolute;
+}
+
+#back {
+    display:none;
+    margin-left:92.2%;
+    margin-top:0.3%;
+    background:url("images/back.png") no-repeat;
     height:32px;
     width:32px;
     cursor:pointer;
