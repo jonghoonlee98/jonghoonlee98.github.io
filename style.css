@@ -97,3 +97,24 @@ html {
 {
     display:block;
 }
+
+
+#terminalwindow
+{
+    display:none;
+    width:600px;
+    position:fixed;
+}
+
+#terminalbar
+{
+    border-bottom:solid;
+    border-bottom-width:0.5px;
+    background-color:white;
+    height:31px;
+}
+
+#terminalinput
+{
+   height:350px; 
+}

@@ -152,7 +152,187 @@ function back() {
 
 }
 
+function openterminal() {
+	$("#terminalwindow").show();
+}
+
 $( function() {
 		$( "#window" ).draggable({handle:"#bar"});
 } );
 
+$( function() {
+		$( "#terminalwindow" ).draggable({handle:"#terminalbar"});
+} );
+
+
+
+var path='Desktop';
+
+jQuery(function($, undefined) {
+    $('#terminalinput').terminal(function(command) {
+    	if (command=="help") {
+    		this.echo("[[b;black;white]ls: list files]");
+    		this.echo("[[b;black;white]cd <DIRECTORY>: change directory]");
+    		this.echo("[[b;black;white]open <FILE>: open file]");
+    		this.echo("[[b;black;white]clear: clear terminal]");
+    		this.echo("[[b;black;white]exit: exit terminal]");
+    	}
+        else if (command=="ls") {
+            if (path=="Desktop") {
+                this.echo('[[b;#6495ED;]Projects        Education       Hobbies]');
+                this.echo('[[b;green;]Terminal        Resume          Github]');
+                this.echo('[[b;green;]Instagram       LinkedIn]');
+            }
+            else if (path=="~") {
+                this.echo('[[b;#6495ED;]Desktop]');
+            }
+            else if (path=="Projects") {
+                this.echo('[[b;green;]gerp            afacts          nocgoot]');
+            }
+            else if (path=="Education") {
+                this.echo('[[b;green;]lhs             tufts]');
+            }
+            else if (path=="Hobbies") {
+                this.echo('[[b;green;]guitar          games           watches]');
+            }
+        }
+
+        else if (command.indexOf("cd ")==0) {
+            if(command.indexOf("Desktop")==3&&path=='~') {
+                this.set_prompt("jong@world:~/Desktop$> ");
+                path="Desktop";
+            }
+            else if(command.indexOf("Projects")==3&&path=='Desktop') {
+                this.set_prompt("jong@world:~/Desktop/Projects$> ");
+                path="Projects";
+            }
+            else if(command.indexOf("Education")==3&&path=='Desktop') {
+                this.set_prompt("jong@world:~/Desktop/Education$> ");
+                path="Education";
+            }
+            else if(command.indexOf("Hobbies")==3&&path=='Desktop') {
+                this.set_prompt("jong@world:~/Desktop/Hobbies$> ");
+                path="Hobbies";
+            }
+            else if(command.indexOf("..")==3&&(path=="Desktop"||path=="~")) {
+                this.set_prompt("jong@world:~$> ");
+                path="~";
+            }
+            else if(command.indexOf("..")==3&&(path=="Projects"||path=="Education"||path=="Hobbies")) {
+                this.set_prompt("jong@world:~$Desktop> ");
+                path="Desktop";
+            }
+            else {
+                this.echo("bash: cd: "+command.substring(3,command.length)+": No such directory")
+            }
+        }
+
+        else if (command.indexOf("open ")==0) {
+            if(command.indexOf("Resume")==5&&path=='Desktop') {
+                window.open('https://drive.google.com/file/d/0B-W5xjcJ4jjReEpEQVJsLTF4ZGs/view?usp=sharing', '_blank');
+            }
+            else if(command.indexOf("Github")==5&&path=='Desktop') {
+                window.open('https://github.com/jonghoonlee98', '_blank');
+            }
+            else if(command.indexOf("Instagram")==5&&path=='Desktop') {
+                window.open('https://www.instagram.com/jonghoonl/');
+            }
+            else if(command.indexOf("LinkedIn")==5&&path=='Desktop') {
+                window.open('https://www.linkedin.com/in/jong-hoon-lee-a5934812a/', '_blank');
+            }
+            else if(command.indexOf("gerp")==5&&path=='Projects') {
+                openfile("gerp");
+            }
+            else if(command.indexOf("afacts")==5&&path=='Projects') {
+                openfile("afacts");
+            }
+            else if(command.indexOf("nocgoot")==5&&path=='Projects') {
+                openfile("nocgoot");
+            }
+            else if(command.indexOf("lhs")==5&&path=='Education') {
+                openfile("lhs");
+            }
+            else if(command.indexOf("tufts")==5&&path=='Education') {
+                openfile("tufts");
+            }
+            else if(command.indexOf("guitar")==5&&path=='Hobbies') {
+                openfile("guitar");
+            }
+            else if(command.indexOf("games")==5&&path=='Hobbies') {
+                openfile("games");
+            }
+            else if(command.indexOf("watches")==5&&path=='Hobbies') {
+                openfile("watches");
+            }
+            else {
+                this.echo("bash: open: "+command.substring(5,command.length)+": No such file")
+            }
+        }
+
+        else if (command=="exit") {
+            this.clear();
+            $("#terminalwindow").hide();
+        }
+
+        else {
+            this.echo(command+": command not found");
+        }
+    }, 
+    {
+        exit: false,
+        greetings: "For a list of available commands, type help",
+        name: 'jong_terminal',
+        prompt: "jong@world:~/Desktop$> "
+    });
+});
+
+function openfile(ftype) {
+	if (ftype=="gerp") {
+		openwindow("Projects");
+		selectfile("gerp");
+	}
+	else if (ftype=="nocgoot") {
+		openwindow("Projects");
+		selectfile("nocgoot");
+	}
+	else if (ftype=="afacts") {
+		openwindow("Projects");
+		selectfile("afacts");
+	}
+	else if (ftype=="lhs") {
+		openwindow("Education");
+		selectfile("lhs");
+	}
+	else if (ftype=="tufts") {
+		openwindow("Education");
+		selectfile("tufts");
+	}
+	else if (ftype=="guitar") {
+		openwindow("Hobbies");
+		selectfile("guitar");	
+	}
+	else if (ftype=="games") {
+		openwindow("Hobbies");
+		selectfile("games");
+	}
+	else if (ftype=="watches") {
+		openwindow("Hobbies");
+		selectfile("watches");
+	}
+}
+
+$( document ).ready(function() {
+	$("#window").click(function() {
+		console.log("yes");	
+		$("#window").css("zIndex",1);
+		$("#terminalwindow").css("zIndex",0);
+	})
+});
+
+$( document ).ready(function() {
+	$("#terminalwindow").click(function() {
+		console.log("no");	
+		$("#window").css("zIndex",0);
+		$("#terminalwindow").css("zIndex",1);
+	})
+});
