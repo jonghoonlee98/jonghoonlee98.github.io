@@ -319,6 +319,8 @@ function openfile(ftype) {
 		openwindow("Hobbies");
 		selectfile("watches");
 	}
+	$("#window").css("zIndex",1);
+	$("#terminalwindow").css("zIndex",0);
 }
 
 $( document ).ready(function() {
