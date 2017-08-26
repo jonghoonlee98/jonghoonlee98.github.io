@@ -323,7 +323,6 @@ function openfile(ftype) {
 
 $( document ).ready(function() {
 	$("#window").click(function() {
-		console.log("yes");	
 		$("#window").css("zIndex",1);
 		$("#terminalwindow").css("zIndex",0);
 	})
@@ -331,7 +330,6 @@ $( document ).ready(function() {
 
 $( document ).ready(function() {
 	$("#terminalwindow").click(function() {
-		console.log("no");	
 		$("#window").css("zIndex",0);
 		$("#terminalwindow").css("zIndex",1);
 	})
