@@ -319,20 +319,26 @@ function openfile(ftype) {
 		openwindow("Hobbies");
 		selectfile("watches");
 	}
-	$("#window").css("zIndex",1);
-	$("#terminalwindow").css("zIndex",0);
+	$("#window").css("zIndex",2);
+	$("#terminalwindow").css("zIndex",1);
 }
 
 $( document ).ready(function() {
 	$("#window").click(function() {
-		$("#window").css("zIndex",1);
-		$("#terminalwindow").css("zIndex",0);
+		$("#window").css("zIndex",2);
+		$("#terminalwindow").css("zIndex",1);
 	})
 });
 
 $( document ).ready(function() {
 	$("#terminalwindow").click(function() {
-		$("#window").css("zIndex",0);
-		$("#terminalwindow").css("zIndex",1);
+		$("#window").css("zIndex",1);
+		$("#terminalwindow").css("zIndex",2);
+	})
+});
+
+$( document ).ready(function() {
+	$("#terminal").click(function() {
+		$("#terminalwindow").css("zIndex",2);
 	})
 });
