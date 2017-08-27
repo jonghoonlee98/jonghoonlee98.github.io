@@ -17,10 +17,16 @@
         left: 0 !important;
     }
     #terminalwindow {
-        width:99.7% !important;
+        width:99.75% !important;
         position: fixed !important; 
         top: 0 !important; 
         left: 0 !important;
+    }
+    #terminalinput {
+        height:100vh !important;
+    }
+    #closeterminal {
+        margin-left:32.5% !important;
     }
     #close {
         margin-left:91% !important;
@@ -47,6 +53,9 @@
     #close {
         margin-left:90% !important;
     }
+    #closeterminal {
+        margin-left:30% !important;
+    }
     #back {
         margin-left:82% !important;
     }
@@ -60,5 +69,8 @@
       -webkit-transform: scale(0.9, 0.9); /* Safari and Chrome */
       -o-transform: scale(0.9, 0.9); /* Opera */
       -moz-transform: scale(0.9, 0.9); /* Firefox */
+    }
+    #closeterminal {
+        margin-left:28% !important;
     }
 }

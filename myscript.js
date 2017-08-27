@@ -168,7 +168,7 @@ $( function() {
 
 var path='Desktop';
 
-jQuery(function($, undefined) {
+jQuery(function ($, undefined) {
     $('#terminalinput').terminal(function(command) {
     	if (command=="help") {
     		this.echo("[[b;black;white]ls: list files]");
@@ -219,7 +219,7 @@ jQuery(function($, undefined) {
                 path="~";
             }
             else if(command.indexOf("..")==3&&(path=="Projects"||path=="Education"||path=="Hobbies")) {
-                this.set_prompt("jong@world:~$Desktop> ");
+                this.set_prompt("jong@world:~Desktop$> ");
                 path="Desktop";
             }
             else {
@@ -269,7 +269,7 @@ jQuery(function($, undefined) {
             }
         }
 
-        else if (command=="exit") {
+        else if (command=="exit"||$("#closeterminal").click()) {
             this.clear();
             $("#terminalwindow").hide();
         }
@@ -277,9 +277,11 @@ jQuery(function($, undefined) {
         else {
             this.echo(command+": command not found");
         }
+
     }, 
     {
         exit: false,
+        wordAutocomplete: true,
         greetings: "For a list of available commands, type help",
         name: 'jong_terminal',
         prompt: "jong@world:~/Desktop$> "
@@ -340,5 +342,11 @@ $( document ).ready(function() {
 $( document ).ready(function() {
 	$("#terminal").click(function() {
 		$("#terminalwindow").css("zIndex",2);
+	})
+});
+
+$( document ).ready(function() {
+	$("#closeterminal").click(function() {
+    	$("#terminalwindow").hide();
 	})
 });
