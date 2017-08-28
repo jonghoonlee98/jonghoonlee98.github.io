@@ -269,7 +269,7 @@ jQuery(function ($, undefined) {
             }
         }
 
-        else if (command=="exit"||$("#closeterminal").click()) {
+        else if (command=="exit") {
             this.clear();
             $("#terminalwindow").hide();
         }
