@@ -1,6 +1,6 @@
 @media only screen and (max-width: 500px) {
     html {
-        background: url("images/background.jpg") no-repeat center center fixed !important; 
+        background: url("images/backgroundmobile.jpg") no-repeat center center fixed !important; 
     }
     #sub1 {
         display:none !important;
