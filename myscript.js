@@ -222,6 +222,10 @@ jQuery(function ($, undefined) {
                 this.set_prompt("jong@world:~Desktop$> ");
                 path="Desktop";
             }
+            else if(command.indexOf("~")==3) {
+                this.set_prompt("jong@world:~$> ");
+                path="~";
+            }
             else {
                 this.echo("bash: cd: "+command.substring(3,command.length)+": No such directory")
             }
@@ -229,7 +233,7 @@ jQuery(function ($, undefined) {
 
         else if (command.indexOf("open ")==0) {
             if(command.indexOf("Resume")==5&&path=='Desktop') {
-                window.open('https://drive.google.com/file/d/0B-W5xjcJ4jjReEpEQVJsLTF4ZGs/view?usp=sharing', '_blank');
+                window.open('resumejong.pdf', '_blank');
             }
             else if(command.indexOf("Github")==5&&path=='Desktop') {
                 window.open('https://github.com/jonghoonlee98', '_blank');
