@@ -1,129 +1,309 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
 	<title>Jong Lee</title>
-	<meta charset="utf-8"/>
+	<meta charset="UTF-8">
 	<meta name="theme-color" content="#395e60">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta property="og:url" content="www.jonghoonlee.com/">
 	<meta property="og:title" content="Jong Lee">
 	<meta property="og:type" content="website">
 	<meta property="og:description" content="Computer science student at Tufts University.">
-	<meta property="og:image" content="images/me.png">
-	<link rel="shortcut icon" href="images/jumbo.png" type="image/x-icon">
-	<link rel="stylesheet" href="style.css"/>	
-	<link rel="stylesheet" href="window.css"/>
-	<link rel="stylesheet" href="mobile.css"/>
-	<link href="https://fonts.googleapis.com/css?family=Saira" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/1.6.2/js/jquery.terminal.min.js"></script>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/1.6.2/css/jquery.terminal.min.css" rel="stylesheet"/>
+	<meta property="og:image" content="img/me.jpg">	
+	<meta name="description" content="Civic - CV Resume">
+	<meta name="keywords" content="resume, civic, onepage, creative, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->   
+	<link href="img/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/flaticon.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" href="css/magnific-popup.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+
+
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
 </head>
-
 <body>
-	<script src="myscript.js"></script>
-	<script src="terminal.js"></script>
-	<div id="terminalwindow">
-		<div id="terminalbar" style="text-align:center">Terminal<button type="button" id="closeterminal"></button></div>
-		<div id="terminalinput"></div>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
 	</div>
-	<div id="files">
-		<div id="row1">
-			<button type="button" id="projects" class="file" onclick="openwindow('Projects')">Projects</button>
-			<button type="button" id="education" class="file" onclick="openwindow('Education')">Education</button>
-			<button type="button" id="hobbies" class="file" onclick="openwindow('Hobbies')">Hobbies</button>
+	
+	<!-- Header section start -->
+	<header class="header-section">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-9">
+					<div class="site-logo">
+						<div id="nav">
+							<h5><a href="#experience" style="color:black">Work Experience</a>
+							&emsp;<a href="#education" style="color:black">Education</a>
+							&emsp;<a href="#projects" style="color:black">Projects</a>
+							&emsp;<a href="#skills" style="color:black">Skills</a></h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 text-md-right header-buttons">
+					<a href="resumejong.pdf" target="_blank" class="site-btn">See Resume</a>
+				</div>
+			</div>
 		</div>
-		<div id="row2">
-			<button type="button" class="file" id="terminal" onclick="openterminal()">Terminal</button>
-			<a href="resumejong.pdf" target="_blank"><button type="button" id="resume" class="file">Resume</button></a>
-			<a href="mailto:jong.lee@tufts.edu" target="_blank"><button type="button" id="email" class="file">Email</button></a>
-		</div>
-		<div id="row3">
-			<a href="https://github.com/jonghoonlee98" target="_blank"><button type="button" id="github" class="file">Github</button></a>
-			<a href="https://www.instagram.com/jonghoonl/" target="_blank"><button type="button" id="ig" class="file">Instagram</button></a>
-			<a href="https://www.linkedin.com/in/jong-hoon-lee-a5934812a/" target="_blank"><button type="button" id="linkedin" class="file">LinkedIn</button></a>
-		</div>
-	</div>
-	<div id="window">
-		<div id="bar">
-			<button type="button" id="back" onclick="back()"></button>
-			<button type="button" id="close" onclick="closewindow()"></button>
-		</div>
-		<div id="sub1">
-			<button id="projectfolder" class="sub1folder" onclick="openwindow('Projects')">Projects</button>
-			<button id="educationfolder" class="sub1folder" onclick="openwindow('Education')">&nbsp&nbsp&nbspEducation</button>
-			<button id="hobbiesfolder" class="sub1folder" onclick="openwindow('Hobbies')">Hobbies</button>
-		</div>
-		<div id="sub2">
-			<button id="gerpfolder" class="sub2folder" onclick="selectfile('gerp')">Gerp</button>
-			<button id="afactsfolder" class="sub2folder" onclick="selectfile('afacts')">Alternative Facts</button>
-			<button id="nocgootfolder" class="sub2folder" onclick="selectfile('nocgoot')">Nocgoot</button>			
-			<button id="lhsfolder" class="sub2folder" onclick="selectfile('lhs')">Leonia High School</button>
-			<button id="tuftsfolder" class="sub2folder" onclick="selectfile('tufts')">Tufts University</button>
-			<button id="guitarfolder" class="sub2folder" onclick="selectfile('guitar')">Guitar</button>
-			<button id="gamesfolder" class="sub2folder" onclick="selectfile('games')">Games</button>
-			<button id="watchesfolder" class="sub2folder" onclick="selectfile('watches')">Watches</button>
-		</div>
-		<div id="sub3">
-			<span id="gerp" class="sub3">
-				<img src="images/gerp.png" alt="Pic Unavailable"/>
-				<h4>It's like grep but called gerp! gerp is a program that will find all instances of a word, case sensitive or insensitive, and return all the locations where the word was found. The data structure I used to maximize efficiency was a trie. Unfortunately, I can't share the source code because it was for a course.</h4>
-				<h4>When: April 2017</h4>
-			</span>
-			<span id="afacts" class="sub3">
-				<img src="images/afacts.png" alt="Pic Unavailable"/>
-				<h4><a href="http://comp20-s2017-team13.herokuapp.com/" target="_blank">Link</a></h4>
-				<h4>A game where players receive three facts, two of which are true and one of which is false. Players have to identify the false fact. We used MongoDB as our database and Heroku as our platform.</h4>
-				<h4>When: March-April 2017</h4>
-				<h4><a href="https://github.com/jonghoonlee98/alternativefacts" target="_blank">Code</a></h4>
-			</span>
-			<span id="nocgoot" class="sub3">
-				<img src="images/nocgoot.png" alt="Pic Unavailable"/>
-				<h4>A game made in C++ using the SFML library. The player has to collect stars and dodge a particle that chases around and randomly bouncing particles. It stands for "no one can get over one thousand".</h4>
-				<h4>When: June 2017</h4>
-				<h4><a href="https://github.com/jonghoonlee98/cppgames/tree/master/nocgoot" target="_blank">Code</a></h4>
-			</span>
-			<span id="lhs" class="sub3">
-				<img src="images/lhs.png" alt="Pic Unavailable"/>
-				<h3><a href="http://lhs.leoniaschools.org/" target="_blank">Leonia High School</a></h3>
-				<h3>Location: Leonia, NJ</h3>
-				<h3>Class of 2016</h3>
-				<h3><a href="https://drive.google.com/file/d/0B43FGKkmIBoxcmNOeVZlSDBtRGM/view" target="_blank">Science Academy</a></h3>
-				<h3>GPA: 4.6 (weighted)</h3>
-			</span>
-			<span id="tufts" class="sub3">
-				<img src="images/tufts.png" alt="Pic Unavailable"/>
-				<h3><a href="https://www.tufts.edu/" target="_blank">Tufts University</a></h3>
-				<h3>Location: Medford, MA</h3>
-				<h3>Class of 2020</h3>
-				<h3>Major: Computer Science</h3>
-				<h3>GPA: 3.7</h3>
-			</span>
-			<span id="guitar" class="sub3">
-				<img src="images/breedlove.png" id="guitarpic" alt="Pic Unavailable"/>
-				<h4>Type: Breedlove Solo Concert Guitar</h4>
-				<h4>Strings: Elixir 80/20 Bronze, L/M</h4>
-				<h4>Style: Fingerpicking</h4>
-				<h4>Duration: 5-6 years</h4>
-				<h4>Favorite Song: <a href="https://www.youtube.com/watch?v=Dic27EnDDls" target="_blank">걱정말아요 그대 (Don't Worry)</a></h4>
-			</span>
-			<span id="games" class="sub3">
-				<img src="images/games.png" id="gamepic" alt="Pic Unavailable"/>
-				<h4>I'm a pretty avid gamer so if you want to play together, hmu!</h4>
-				<p>LoL ID: <a href="https://na.op.gg/summoner/userName=jongbo" target="_blank">Jongbo</a></p>
-				<p>Steam ID: <a href="http://steamcommunity.com/id/jonghoonlee98" target="_blank">jonghoonlee98</a></p>
-				<p>Battle.net ID: isaacnunuton#1997</p>
-				<p>SSBM Main: Marth</p>
-			</span>
-			<span id="watches" class="sub3">
-				<img src="images/watches.png" alt="Pic Unavailable"/>
-				<p>-DW Classic Sheffield<br/>-DW Classic Black Sheffield<br/>-Fossil Grant Chronograph<br/>-MVMT Classic Series<br/>-Tommy Hilfiger George<br/>-Casio Edifice</p>
-			</span>
-		</div>
-	</div>
-</body>
+	</header>
+	<!-- Header section end -->
 
+	<!-- Hero section start -->
+	<section class="hero-section spad2">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-10 offset-xl-1">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="hero-text">
+								<h2>Jong<br>Lee</h2>
+								<p>I’m currently an undergraduate student at Tufts University studying computer science.</p>
+							</div>
+							<div class="hero-info">
+								<h2>General Info</h2>
+								<ul>
+									<li><span>E-mail</span>jong.lee@tufts.edu</li>
+									<li><span>Year</span>Junior</li>
+									<li><span>Residency </span>Leonia, NJ</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<figure class="hero-image">
+								<img src="img/me.jpg" alt="5">
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Hero section end -->
+
+	<!-- Social links section start -->
+	<div class="social-section">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-10 offset-xl-1">
+					<div class="social-link-warp">
+						<div class="social-links">
+							<a href="https://www.linkedin.com/in/jong-hoon-lee-a5934812a/" target="_blank"><i class="fa fa-linkedin"></i></a>
+							<a href="https://www.instagram.com/jonghoonl/" target="_blank"><i class="fa fa-instagram"></i></a>
+							<a href="https://github.com/jonghoonlee98" target="_blank"><i class="fa fa-github"></i></a>
+						</div>
+						<h2 class="hidden-md hidden-sm">My Social Profiles</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<!-- Social links section end -->
+
+	<!-- Resume section start -->
+	<section id="experience" class="resume-section spad">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-7 offset-xl-2">
+					<div class="section-title">
+						<h2>Work Experience</h2>
+					</div>
+					<ul class="resume-list">
+						<li class="list">
+							<h2>Samsung SDSA</h2>
+							<h3>Jun 2018-Aug 2018</h3>				
+							<h4>Web Development Intern</h4>
+							<ul>
+								<li><p>Create a desktop application PC-Monitoring using node.js and electron that monitors a PC's health and starts applications remotely using AWS api calls</p></li>
+								<li><p>Create a dashboard using Bootstrap that can display info of PCs running PC-Monitoring and remotely start applications</p></li>
+								<li><p>Create a python application using OpenCV that detects people moving in a RTSP stream and tracks their movement</p></li>
+							</ul>
+						</li>
+						<li class="list">
+							<h2>Tufts Technology Services</h2>
+							<h3>Sep 2017-Dec 2017</h3>
+							<h4>Research Technology Intern</h4>
+							<ul>
+								<li><p>Create and improve web application templates and forms using HTML, CSS, and Javscript</p></li>
+								<li><p>Organize data on LabArchives, an electronic lab notebook used by researchers, and develop widgets to provide better interface</p></li>
+								<li><p>Support/troubleshooting on issues via phone, remotely, and onsite</p></li>
+								<li><p>Migrate templates and forms from one online lab notebook solution to another</p></li>
+							</ul>
+						</li>
+						<li class="list">
+							<h2>New Jersey Institute of Technology</h2>
+							<h3>Sep 2015-May 2016</h3>
+							<h4>Research Technology Intern</h4>
+							<ul>
+								<li><p>Coded in Matlab to improve toolboxes like Statistical Parametric Mapping, and Group ICA of fMRI toolbox</p></li>
+								<li><p>Submitted a research abstract to the Northeast Bioengineering Conference and competed in the undergraduate design competition</p></li>
+							</ul>
+						</li>						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Resume section end -->
+
+	<!-- Resume section start -->
+	<section id="education" class="resume-section with-bg spad">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-7 offset-xl-2">
+					<div class="section-title">
+						<h2>Education</h2>
+					</div>
+					<ul class="resume-list">
+						<li>
+							<h2>Tufts University</h2>
+							<h3>GPA: 3.7</h3>
+							<h3>Class of 2020</h3>
+							<h4>Computer Science</h4>
+						</li>
+						<li>
+							<h2>Leonia High School</h2>
+							<h3>GPA: 4.6 (weighted)</h3>
+							<h4>Class of 2016</h4>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Resume section end -->
+
+	
+	<!-- Review section start -->
+	<section id="projects" class="review-section spad pb-0">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-7 offset-xl-2">
+					<div class="section-title">
+						<h2>Projects</h2>
+					</div>
+					<div class="review-slider owl-carousel">
+						<div class="single-review">				
+							<h3>Arith</h3>
+							<h4>C</h4>
+							<h4>10/2017</h4>
+							<p>- Created a program that can compress and decompress jpg images<br>
+							- Utilize bit extraction, machine arithmetic, and endianness</p>						
+						</div>
+						<div class="single-review">
+							<h3>Gerp</h3>
+							<h4>C++</h4>
+							<h4>04/2017</h4>
+							<p>- Created a program like the Unix command grep using a trie as the main data structure<br>
+							- Implemented a breadth first search algorithm to traverse through all the files<br>
+							- Developed skills to distinguish which algorithms and data structures are most efficient for run time and space requirements</p>
+						</div>
+						<div class="single-review">
+							<h3>RYG</h3>
+							<h4>C#</h4>
+							<h4>12/2017</h4>
+							<p>- Created a game using Unity that where user regulates traffic at a 4-way intersection<br>
+							- Created algorithms to spawn cars and pedestrians appropriately</p>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Review section end -->
+
+	<!-- Portfolio section start -->
+	<section id="skills" class="portfolio-section spad pb-0">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-4 col-md-8 offset-xl-2 ">
+					<div class="section-title">
+						<h2>Skills</h2>
+					</div>
+				</div>
+			</div>
+			<div class="portfolio-warp">
+				<div class="row">
+					<div class="col-xl-4 col-lg-7 col-md-7">
+						<div class="portfolio-item">
+							<a href="img/portfolio/programming.png" class="set-bg port-pic" data-setbg="img/portfolio/programming.png"></a>
+							<h2>Programming Languages</h2>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-7 col-md-7">
+						<div class="portfolio-item">
+							<a href="img/portfolio/tools.png" class="set-bg port-pic" data-setbg="img/portfolio/tools.png"></a>
+							<h2>Tools &amp; Frameworks</h2>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-7 col-md-7">
+						<div class="portfolio-item">
+							<a href="img/portfolio/mis.png" class="set-bg port-pic" data-setbg="img/portfolio/mis.png"></a>
+							<h2>Miscellaneous</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Portfolio section end -->
+
+	<!-- Footer section start -->
+	<footer class="footer-section">
+		<div class="container text-center">
+			<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</div>
+		</div>
+	</footer>
+	<!-- Footer section end -->
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/magnific-popup.min.js"></script>
+	<script src="js/circle-progress.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("a").on('click', function(event) {
+
+		    // Make sure this.hash has a value before overriding default behavior
+		    if (this.hash !== "") {
+		      // Prevent default anchor click behavior
+		      event.preventDefault();
+
+		      // Store hash
+		      var hash = this.hash;
+
+		      // Using jQuery's animate() method to add smooth page scroll
+		      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 800, function(){
+		   
+		        // Add hash (#) to URL when done scrolling (default click behavior)
+		        window.location.hash = hash;
+		      });
+		    } // End if
+		  });
+		});
+	</script>
+</body>
 </html>
