@@ -380,7 +380,7 @@ body.section-show .transition-mask:before{
 	-webkit-animation: fill .4s both ease;
 	-moz-animation: fill .4s both ease;
 	animation: fill .4s both ease;
-	background:#CCC;
+	background:#7C95B3;
 }
 
 @-webkit-keyframes fill2{
